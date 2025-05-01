@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home - JTMK</title>
+
+  <!-- jQuery Mobile 1.4.5 and jQuery -->
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script>
+    $(document).on("mobileinit", function () {
+      $.mobile.ajaxEnabled = false; // Required for external page navigation
+    });
+  </script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    .ui-page {
+      background-color: lightblue !important;
+    }
+
+    .social-sidebar {
+      position: fixed;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      z-index: 1000;
+    }
+
+    .social-sidebar a {
+      display: block;
+      margin: 5px 0;
+      padding: 8px;
+      background: #f1f1f1;
+      text-align: center;
+      border-radius: 0 5px 5px 0;
+      color: #333;
+    }
+
+    .social-sidebar a:hover {
+      background: #ddd;
+    }
+
+    .social-sidebar i {
+      font-size: 20px;
+    }
+
+    .intro-section {
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    .intro-section h1 {
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
+
+    .intro-section p {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Social Media Sidebar -->
+  <div class="social-sidebar">
+    <a href="#"><i class="fab fa-linkedin"></i></a>
+    <a href="#"><i class="fab fa-github"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-youtube"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+  </div>
+
+  <!-- Home Page Content -->
+  <div data-role="page" id="homePage">
+
+    <!-- Header -->
+    <div data-role="header" data-position="fixed">
+      <div style="display: flex; align-items: center; justify-content: center; padding: 5px 10px;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROyv4Nw0BIjqcgF-J1VsyBbg3NfMots20uQQ&s"
+             alt="Logo"
+             style="height:90px; max-height:8vh; margin-right:10px;">
+        <h1 style="margin: 0; font-size: 1.5em;">Jabatan Teknologi Maklumat & Komunikasi</h1>
+      </div>
+
+      <!-- Navigation Bar -->
+      <div data-role="navbar">
+        <ul>
+          <li><a href="homePage.html" class="ui-btn-active" data-icon="home">Home</a></li>
+          <li><a href="about.html" data-icon="info">About</a></li>
+          <li><a href="project.html" data-icon="grid">Projects</a></li>
+          <li><a href="contact.html" data-icon="mail">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div data-role="content">
+      <div class="intro-section">
+        <marquee behavior="scroll" direction="left" scrollamount="20">
+          <h1 style="display: inline;">HEY, MY NAME IS JTMK</h1>
+        </marquee>
+        <p>
+          JTMK is the Department of Information and Communication Technology (JTMK) offering DDT courses
+          (Diploma in Information Technology (Digital Technology)) at Seberang Perai Polytechnic (PSP).
+        </p>
+        <a href="project.html" class="ui-btn ui-btn-b ui-icon-arrow-r ui-btn-icon-left" style="width: auto; display: inline-block;">PROJECTS</a>
+    </div>
+    </div>
+
+    <!-- Footer -->
+    <div data-role="footer" data-position="fixed">
+      <h4>&copy; DDT4C S2 2024/2025. All rights reserved.</h4>
+    </div>
+
+  </div>
+
+</body>
+</html>

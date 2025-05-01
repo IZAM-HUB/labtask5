@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact - JTMK</title>
+
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script>
+    $(document).on("mobileinit", function () {
+      $.mobile.ajaxEnabled = false;
+    });
+  </script>
+  
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    .ui-page {
+      background-color: lightblue !important;
+    }
+
+    .social-sidebar {
+      position: fixed;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      z-index: 1000;
+    }
+
+    .social-sidebar a {
+      display: block;
+      margin: 5px 0;
+      padding: 8px;
+      background: #f1f1f1;
+      text-align: center;
+      border-radius: 0 5px 5px 0;
+      color: #333;
+    }
+
+    .social-sidebar a:hover {
+      background: #ddd;
+    }
+
+    .social-sidebar i {
+      font-size: 20px;
+    }
+
+    .contact-button {
+      margin: 15px auto;
+      text-align: center;
+    }
+
+    .contact-button a {
+      margin: 10px;
+      display: inline-block;
+      width: 80%;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Social Media Sidebar -->
+  <div class="social-sidebar">
+    <a href="#"><i class="fab fa-linkedin"></i></a>
+    <a href="#"><i class="fab fa-github"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-youtube"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+  </div>
+
+  <div data-role="page" id="contactPage">
+
+    <div data-role="header" data-position="fixed">
+      <div style="display: flex; align-items: center; justify-content: center; padding: 5px 10px;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROyv4Nw0BIjqcgF-J1VsyBbg3NfMots20uQQ&s"
+             alt="Logo"
+             style="height:90px; max-height:8vh; margin-right:10px;">
+        <h1 style="margin: 0; font-size: 1.5em;">Jabatan Teknologi Maklumat & Komunikasi</h1>
+      </div>
+
+      <div data-role="navbar">
+        <ul>
+          <li><a href="index.html" data-icon="home">Home</a></li>
+          <li><a href="about.html" class="ui-btn-active" data-icon="info">About</a></li>
+          <li><a href="project.html" data-icon="grid">Projects</a></li>
+          <li><a href="contact.html" class="ui-btn-active" data-icon="mail">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div data-role="content">
+      <h2 style="text-align:center;">Hubungi Kami</h2>
+
+      <div class="contact-button">
+        <a href="tel:0123456789" class="ui-btn ui-icon-phone ui-btn-icon-left">Call Us</a>
+        <a href="mailto:info@jtmk.edu.my" class="ui-btn ui-icon-mail ui-btn-icon-left">Email Us</a>
+        <a href="https://wa.me/60123456789" class="ui-btn ui-icon-comment ui-btn-icon-left" target="_blank">WhatsApp</a>
+      </div>
+    </div>
+
+    <div data-role="footer" data-position="fixed">
+      <h4>&copy; DDT4C S2 2024/2025. All rights reserved.</h4>
+    </div>
+
+  </div>
+
+</body>
+</html>

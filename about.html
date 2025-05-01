@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - JTMK</title>
+
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script>
+      $(document).on("mobileinit", function () {
+        $.mobile.ajaxEnabled = false;
+      });
+    </script>
+    
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    .ui-page {
+      background-color: lightblue !important;
+    }
+
+    .member-profile {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .member-profile img {
+      width: 120px;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .social-sidebar {
+      position: fixed;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      z-index: 1000;
+    }
+
+    .social-sidebar a {
+      display: block;
+      margin: 5px 0;
+      padding: 8px;
+      background: #f1f1f1;
+      text-align: center;
+      border-radius: 0 5px 5px 0;
+      color: #333;
+    }
+
+    .social-sidebar a:hover {
+      background: #ddd;
+    }
+
+    .social-sidebar i {
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+
+    <!--we use CDN for icon-->
+    <div class="social-sidebar">
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+
+      <div data-role="page" id="aboutPage">
+
+        <div data-role="header" data-position="fixed">
+            <div style="display: flex; align-items: center; justify-content: center; padding: 5px 10px;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROyv4Nw0BIjqcgF-J1VsyBbg3NfMots20uQQ&s"
+                     alt="Logo"
+                     style="height:90px; max-height:8vh; margin-right:10px;">
+
+                <h1 style="margin: 0; font-size: 1.5em;">Jabatan Teknologi Maklumat & Komunikasi</h1>
+              </div>
+            
+      
+
+          <div data-role="navbar">
+            <ul>
+              <li><a href="index.html" data-icon="home">Home</a></li>
+              <li><a href="about.html" class="ui-btn-active" data-icon="info">About</a></li>
+              <li><a href="project.html" data-icon="grid">Projects</a></li>
+              <li><a href="contact.html" class="ui-btn" data-icon="mail">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div data-role="content">
+          <p></p><marquee behavior="scroll" direction="right" scrollamount="30" loop="infinite">
+            <h2 style="text-align:center;">KUMPULAN KAMI</h2>
+          </marquee></p>
+      
+          <div class="member-profile">
+            <img src="Shahrul png.jpeg" alt="Member 1">
+            <h3>SHAHRUL RIDHWAN BIN SHAMSUL AMRI</h3>
+            <p><strong>Head of Department</strong></p>
+            <p>Contact: 012-3473581</p>
+          </div>
+      
+          <div class="member-profile">
+            <img src="izam png.jpeg" alt="Member 2">
+            <h3>IZAMRUL RAMADHAN BIN SAHRUL</h3>
+            <p><strong>Program Head (Software Track)</strong></p>
+            <p>Contact: 019-4735432</p>
+          </div>
+      
+          <div class="member-profile">
+            <img src="Syaqadpng.jpeg" alt="Member 3">
+            <h3>MUHAMMAD SYAQAD ALIM BIN HASPUL ANUAR</h3>
+            <p><strong>Program Head (Network Track)</strong></p>
+            <p>Contact: 013-2349678</p>
+          </div>
+      
+          <div class="member-profile">
+            <img src="Zarep png.jpeg" alt="Member 4">
+            <h3>ZARIF WAFIQ BIN ZAINI</h3>
+            <p><strong>Program Head (Data Track)</strong></p>
+            <p>Contact: 017-9988776</p>
+          </div>
+        </div>
+      
+        <div data-role="footer" data-position="fixed">
+          <h4>&copy; DDT4C S2 2024/2025. All rights reserved.</h4>
+        </div>
+      
+      </div>
+ 
+
+</body>
+</html>
